@@ -1,7 +1,7 @@
 Shows a neural network using Pytorch Framework 
 
 1. Using CIFAR10 dataset
-2. total RF must be more than 44
+2. Total RF must be more than 44
 3. One of the layers uses Depthwise Separable Convolution
 4. One of the layers uses Dilated Convolution
 5. GAP layer is used
