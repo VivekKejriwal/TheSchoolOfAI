@@ -15,8 +15,7 @@ class album_compose():
             # RandomCrop(10,10),
             HorizontalFlip(),
             Normalize(
-                mean=[0.5, 0.5, 0.5],
-                std=[0.5, 0.5, 0.5]
+                (0.4914, 0.4822, 0.4465), (0.2023, 0.1994, 0.2010)
             ), ToTensor()])
 
     def __call__(self, img):
