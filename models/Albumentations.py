@@ -9,7 +9,7 @@ class album_compose():
     def __init__(self):
         self.albumentation_transforms = Compose([
             Rotate((-7.0, 7.0)),
-            Cutout(),
+            Cutout(num_holes=4),
             CoarseDropout(),
             # RandomSizedCrop':{'height':32,'width':32,'min_max_height':[28,28]},
             # RandomCrop(10,10),
