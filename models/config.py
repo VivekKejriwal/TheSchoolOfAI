@@ -12,6 +12,7 @@ from pprint import pprint
 class ModelConfig:
 
   def __init__(self,train_transform=None):
+    super(ModelConfig, self).__init__()
     self.seed = 1
     self.batch_size_cuda = 128
     self.batch_size_cpu = 64	
