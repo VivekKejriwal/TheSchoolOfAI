@@ -8,7 +8,7 @@ class album_compose():
 
     def __init__(self):
         self.albumentation_transforms = Compose([
-            PadIfNeeded(min_height=36, min_width=36)
+            PadIfNeeded(min_height=36, min_width=36),
             Cutout(num_holes=4),
             CoarseDropout(),
             # RandomSizedCrop':{'height':32,'width':32,'min_max_height':[28,28]},
