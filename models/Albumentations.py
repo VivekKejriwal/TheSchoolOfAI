@@ -10,11 +10,11 @@ class album_compose():
         self.albumentation_transforms = Compose([
             PadIfNeeded(min_height=36, min_width=36),
             Cutout(num_holes=4),
-            CoarseDropout(),
             # RandomSizedCrop':{'height':32,'width':32,'min_max_height':[28,28]},
             RandomCrop(32,32),
             HorizontalFlip(),
-            Normalize((0.4914, 0.4822, 0.4465), (0.2023, 0.1994, 0.2010)), ToTensor()])
+            Normalize((0.4914, 0.4822, 0.4465), (0.2023, 0.1994, 0.2010)), 
+            ToTensor()])
 
     def __call__(self, img):
         img = np.array(img)
